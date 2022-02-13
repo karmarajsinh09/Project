@@ -9,7 +9,7 @@
             <br /><br />
             <p>
 
-       <b>  This is About us page of Tour Trip website where you can get amazing Tour plan at afordable price</b>
+       <b>  This is About us page of Travelo website where you can get amazing Tour plan at afordable price</b>
                 </p>
             <p>
             <b>    If any customer have any query about any tour ,  kindly mail us with your query

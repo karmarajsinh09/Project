@@ -92,7 +92,7 @@
         </div>
          <footer id="footer1"  align="center">
            <br />
-            &copy; All Right Reserved By <i><b>Tour Trip</b></i><br /><br />
+            &copy; All Right Reserved By <i><b>Travelo</b></i><br /><br />
              </footer>
     </form>
 </body>
