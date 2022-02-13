@@ -9,6 +9,6 @@ namespace Site
 {
     public class DBclass 
     {
-       public static SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\RUSHIRAJSINH\Documents\abc.mdf;Integrated Security=True;Connect Timeout=30");
+       public static SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\RUSHIRAJSINH\Desktop\Project\TourSiteProject\site\abc.mdf;Integrated Security=True;Connect Timeout=30");
     }
 }

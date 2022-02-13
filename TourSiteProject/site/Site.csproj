@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="abc.mdf" />
+    <Content Include="abc_log.ldf">
+      <DependentUpon>abc.mdf</DependentUpon>
+    </Content>
     <Content Include="AboutUs.aspx" />
     <Content Include="admin.aspx" />
     <Content Include="adminlogin.aspx" />
