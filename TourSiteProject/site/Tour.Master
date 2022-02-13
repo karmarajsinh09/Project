@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Tour.master.cs" Inherits="Site.Tour" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="site.css" rel="stylesheet" />
+       <%-- <link href="StyleSheet1.css" rel="stylesheet" />--%>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div >
+            
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <div class="container-fluid col-lg-12">
+
+    <a class="navbar-brand  " href="#"><i>Travelo &nbsp;<i style="color:white;" class="fa fa-plane fa-lg" aria-hidden="true"></i>
+</i></a>
+
+  
+
+
+  
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <asp:LinkButton ID="Home" runat="server" class="nav-link " OnClick="Home_Click" CausesValidation="False"><b>Home</b></asp:LinkButton>
+            </li>     
+              <li class="nav-item">
+              <asp:LinkButton ID="Aboutus" runat="server" class="nav-link " OnClick="Aboutus_Click" CausesValidation="False" ><b>AboutUs</b></asp:LinkButton>
+            </li>
+              <li class="nav-item">
+              <asp:LinkButton ID="Contactus" runat="server" class="nav-link " OnClick="ContactUs_Click" CausesValidation="False" ><b>ContactUs</b></asp:LinkButton>
+            </li>
+             </ul>
+        </div>
+
+           
+                    <asp:Button ID="btnlogin" runat="server" Text="Login" class="btn btn-primary my-2 my-sm-0 mx-2" type="submit" OnClick="btnlogin_Click" CausesValidation="False" UseSubmitBehavior="False" />
+                      <asp:Button ID="btnregister" runat="server" Text="Register" class="btn btn-danger my-2 my-sm-0 mx-2" type="submit" OnClick="btnregister_Click" CausesValidation="False" UseSubmitBehavior="False" ValidateRequestMode="Disabled" />
+       <asp:Button ID="admin_login" runat="server" Text="Admin Login" class="btn btn-warning" OnClick="Button1_Click" CausesValidation="False" />
+     <asp:Button ID="btnlogout" runat="server" Text="Logout" class="btn btn-danger my-2 my-sm-0 mx-2" type="submit"  CausesValidation="False" UseSubmitBehavior="False" ValidateRequestMode="Disabled" OnClick="btnlogout_Click" />
+   <%--   <asp:Button ID="Button1" runat="server" Text="Cart" class="btn btn-success my-2 my-sm-0 mx-2" CausesValidation="False" UseSubmitBehavior="False" OnClick="Button1_Click1"  />--%>
+
+  </div>
+</nav> 
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           </asp:ContentPlaceHolder>      
+        </div>
+    
+ 
+    
+     <footer id="footer1" class="align-bottom"  align="center">
+           
+            &copy; All Right Reserved By @ Travelo  <i style="color:white;" class="fa fa-plane fa-lg" aria-hidden="true"> </i><br /><br />
+        
+     </footer>
+    </form>
+</body>
+</html>

@@ -1,0 +1,101 @@
+﻿
+.header {
+    height: 100vh;
+    background-image: url('images/beaches.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 250px;
+    text-align: center;
+    color: #fff;
+}
+
+#pose {
+    color:cyan;
+}
+
+.cat {
+    border: 1px solid;
+    border-width: 4px;
+    border-radius: 50px;
+    float: left;
+    height: 300px;
+    width: 330px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+
+
+.category {
+    border: 1px solid;
+    border-width: 4px;
+    border-radius: 50px;
+    float: left;
+    height: 300px;
+    width: 330px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+#footer1 {
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: 100%;
+    position: page;
+    bottom: 0;
+    /* Height of the footer */
+}
+
+body {
+}
+
+#logs {
+    height: 197px;
+}
+
+#regs {
+    height: 179px;
+}
+
+#homes1 {
+    height: auto;
+}
+
+
+.us {
+    height: 500px;
+    border: 1px solid;
+    border-width: 2px;
+    border-radius: 100px;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.cont {
+    height: 500px;
+    border: 1px solid;
+    border-width: 2px;
+    border-radius: 100px;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.smal {
+    width: 200px;
+}
+
+#lbgallery {
+    margin-top: 1300px;
+}
+
+.gallery1 {
+    height: auto;
+    width: 100%;
+}
+
+.abc {
+    width: 300px
+}
