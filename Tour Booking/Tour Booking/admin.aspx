@@ -295,7 +295,8 @@
   </div>
                    <br /><br />
                    &nbsp;
-                   <asp:Button ID="gallery_add" runat="server" Text="Add" type="submit" class="btn btn-primary" Width="96px" OnClick="gallery_add_Click"  ></asp:Button>
+                   <asp:Button ID="gallery_ad" runat="server" Text="Add" type="submit" 
+                           class="btn btn-primary" Width="96px" onclick="gallery_ad_Click"  ></asp:Button>
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                <asp:Button ID="gallery_clear" runat="server" Text="Clear" class="btn btn-danger" Width="95px" CausesValidation="False" OnClick="gallery_clear_Click"  />
 

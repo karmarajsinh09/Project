@@ -3,7 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="header">
-    <h1 id="pose"> <asp:Label ID="heading" runat="server" Text="Welcome To Our Site"></asp:Label><asp:Label ID="sitename" runat="server" Text=" Travelo"></asp:Label> <asp:Label ID="user" runat="server" Text=" user"></asp:Label><i style="color:white;" class="fa fa-plane fa-lg" aria-hidden="true"></i>
+    <h1 id="pose"> <asp:Label ID="heading" runat="server" Text="Welcome To Our Site"></asp:Label><asp:Label ID="sitename" runat="server" Text=" Travelo"></asp:Label> <%--<asp:Label ID="user" runat="server" Text=" user"></asp:Label>--%><i style="color:white;" class="fa fa-plane fa-lg" aria-hidden="true"></i>
 </h1>
             </section>
    
@@ -11,7 +11,7 @@
         <div style="background-color:aqua;">
             <br />
     <div id="homes1">
-        <asp:Label ID="lbuser" runat="server" Text="Welcome "></asp:Label>
+        <%--<asp:Label ID="lbuser" runat="server" Text="Welcome "></asp:Label>--%>
         <h2>
             
             <b>
@@ -52,8 +52,8 @@
    
         <asp:Repeater ID="Repeater2" runat="server">
             <ItemTemplate>
-                <%--gallery.aspx?galname=<%#eval("gallery_image_name") %>--%>
-                <a href="#">
+                
+                <a href="gallery.aspx?galname=<%#Eval("gallery_image_name") %>">
                     <asp:Image ID="Image1" runat="server" Style="margin-left:70px; margin-top:50px; border-radius:50px; border:1px solid; border-width:4px;"
                         ImageUrl='<%#Eval("gallery_imgpath") %>' Height="350px" Width="350px" />
                 </a>&nbsp;

@@ -65,12 +65,13 @@ namespace Site
             btnregister.Visible = true;
             btnlogin.Visible = true;
             btnlogout.Visible = false;
-            Label lbuser = (Label)ContentPlaceHolder1.FindControl("lbuser");
-            lbuser.Visible = false;
-            Label user = (Label)ContentPlaceHolder1.FindControl("user");
-            user.Visible = false;
-            Label sitename = (Label)ContentPlaceHolder1.FindControl("sitename");
-            sitename.Visible = true;
+            Response.Redirect("Default.aspx");
+            //Label lbuser = (Label)ContentPlaceHolder1.FindControl("lbuser");
+            //lbuser.Visible = false;
+            //Label user =(Label)ContentPlaceHolder1.FindControl("user");
+            //user.Visible = false;
+            //Label sitename = (Label)ContentPlaceHolder1.FindControl("sitename");
+            //sitename.Visible = true;
         }
 
         protected void Button1_Click(object sender, EventArgs e)

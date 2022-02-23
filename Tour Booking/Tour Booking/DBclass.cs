@@ -9,6 +9,6 @@ namespace Site
 {
     public class DBclass 
     {
-        public static SqlConnection cn = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=E:\karmarajsinh\Project-main\TourSiteProject\site\Site.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True");
+        public static SqlConnection cn = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\STUD\Documents\Tour.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True");
     }
 }

@@ -164,7 +164,7 @@ namespace Site
                 fileupload.SaveAs(path + fileupload.FileName);
                 string st = "~/images/";
                 string img = st + fileupload.FileName;
-                string sql2 = "insert into category values('" + cat_name.Text + "' , '" + img + "' , '" + loc_1.Text + "' , '" + loc_2.Text + "' , 1,'" + loc1_price.Text+"' , '"+loc2_price.Text+"' )";
+                string sql2 = "insert into category values('" + cat_name.Text + "' , '" + img + "' , '" + loc_1.Text + "' , '" + loc_2.Text + "' , '" + loc1_price.Text+"' , '"+loc2_price.Text+"',1 )";
                 SqlDataAdapter da2 = new SqlDataAdapter(sql2, DBclass.cn);
                 DataTable dt2 = new DataTable();
                 da2.Fill(dt2);
@@ -172,6 +172,12 @@ namespace Site
                 {
                     catmsg.Text = "Category added";
                     catmsg.Visible = true;
+                    cat_name.Text = "";
+                    loc_1.Text = "";
+                    loc_2.Text = "";
+                    loc1_price.Text = "";
+                    loc2_price.Text = "";
+                    fileupload.Dispose();
                 }
                 else
                 {
@@ -212,6 +218,28 @@ namespace Site
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
             contactus.Visible = true;
+        }
+
+        protected void gallery_ad_Click(object sender, EventArgs e)
+        {
+            string path = Server.MapPath("~/images/");
+            fileupload2.SaveAs(path + fileupload2.FileName);
+            string st = "~/images/";
+            string img = st + fileupload2.FileName;
+            string sql = "insert into gallery values('" + place_name.Text + "','" + img + "',1,'" + price.Text + "')";
+            SqlDataAdapter da2 = new SqlDataAdapter(sql, DBclass.cn);
+            DataTable dt2 = new DataTable();
+            da2.Fill(dt2);
+            if (!da2.Equals(null))
+            {
+                galmsg.Text = "Place Added";
+                galmsg.Visible = true;
+            }
+            else
+            {
+                galmsg.Text = "Place Not added";
+                galmsg.Visible = true;
+            }
         }
     }
 }

@@ -16,8 +16,8 @@ namespace Site
         protected void Page_Load(object sender, EventArgs e)
         {
             Session["home_start"] = "home";
-            lbuser.Visible = false;
-            user.Visible = false;
+            //lbuser.Visible = false;
+            //user.Visible = false;
             //if ((string)Session["logedin"] == "loged_in")
             //{
             //    Button btnlogin = (Button)Master.FindControl("btnlogin");
@@ -35,11 +35,11 @@ namespace Site
             }
             if((string)Session["logedin"] == "loged_in")
             {
-                lbuser.Visible = true;
-                sitename.Visible = false;
-                user.Visible = true;
-                user.Text = Session["user"].ToString();
-                lbuser.Text += Session["user"].ToString();
+                //lbuser.Visible = true;
+                //sitename.Visible = false;
+                //user.Visible = true;
+                //user.Text = Session["user"].ToString();
+                //lbuser.Text += Session["user"].ToString();
             }
             string sql = "select cat_img, cat_name from category where status=1";
             SqlDataAdapter da = new SqlDataAdapter(sql, DBclass.cn);

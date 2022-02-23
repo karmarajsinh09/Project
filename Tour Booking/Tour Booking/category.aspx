@@ -50,7 +50,7 @@
             </tr>
            <tr>
                <td>
-                   <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" ViewStateMode="Enabled" AutoPostBack="True">
+                   <asp:DropDownList ID="DropDownList1" class="form-control" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" ViewStateMode="Enabled" AutoPostBack="True">
 
                    </asp:DropDownList>
                </td>

@@ -26,7 +26,7 @@ namespace Site
                 {
                     placename.Text = (string)dt.Rows[0]["gallery_image_name"];
                     place_image.ImageUrl = (string)dt.Rows[0]["gallery_imgpath"];
-                    price.Text = (string)dt.Rows[0]["price"];
+                    price.Text = dt.Rows[0]["price"].ToString();
                 }
 
             }

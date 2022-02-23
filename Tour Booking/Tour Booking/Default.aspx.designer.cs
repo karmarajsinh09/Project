@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Site
-{
-
-
-    public partial class WebForm1
-    {
-
+namespace Site {
+    
+    
+    public partial class WebForm1 {
+        
         /// <summary>
         /// heading control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label heading;
-
+        
         /// <summary>
         /// sitename control.
         /// </summary>
@@ -31,25 +29,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label sitename;
-
-        /// <summary>
-        /// user control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label user;
-
-        /// <summary>
-        /// lbuser control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbuser;
-
+        
         /// <summary>
         /// lbcategory control.
         /// </summary>
@@ -58,7 +38,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbcategory;
-
+        
         /// <summary>
         /// Repeater1 control.
         /// </summary>
@@ -67,7 +47,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater Repeater1;
-
+        
         /// <summary>
         /// Label2 control.
         /// </summary>
@@ -76,7 +56,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
-
+        
         /// <summary>
         /// Repeater2 control.
         /// </summary>

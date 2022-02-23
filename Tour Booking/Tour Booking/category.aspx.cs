@@ -61,7 +61,7 @@ namespace Site
             DataTable dt = new DataTable();
             da.Fill(dt);
 
-            string sql1 = "insert into cart values('"+tou_name.Text+"','"+(string)dt.Rows[0]["cat_img"]+"','"+price.Text+"','"+Session["user"]+"' , 1)";
+            string sql1 = "insert into cart values('" + DropDownList1.SelectedItem.Text + "','" + (string)dt.Rows[0]["cat_img"] + "','" + price.Text + "','" + Session["user"] + "' , 1)";
             SqlDataAdapter da1 = new SqlDataAdapter(sql1, DBclass.cn);
             DataTable dt1 = new DataTable();
             da1.Fill(dt1);

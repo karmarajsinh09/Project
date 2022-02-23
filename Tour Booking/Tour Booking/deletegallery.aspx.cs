@@ -21,6 +21,7 @@ namespace Site
             da.Fill(dt);
             place_name.Text = (string)dt.Rows[0]["gallery_image_name"];
             Image1.ImageUrl = (string)dt.Rows[0]["gallery_imgpath"];
+            price.Text = (string)dt.Rows[0]["price"];
         }
 
         protected void gallery_clear_Click(object sender, EventArgs e)

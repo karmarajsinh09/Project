@@ -50,11 +50,12 @@ namespace Site
             string sql = "select SUM(price) from cart where status12='"+Session["user"]+"' and status=1 ";
             SqlCommand cmd = new SqlCommand(sql, DBclass.cn);
             DBclass.cn.Open();
-            int sum = Convert.ToInt32(cmd.ExecuteScalar().ToString());
-            DBclass.cn.Close();
+            string sum = cmd.ExecuteScalar().ToString();
+            
             cmd.Dispose();
 
             return Convert.ToString(sum);
+            DBclass.cn.Close();
         }
 
     }

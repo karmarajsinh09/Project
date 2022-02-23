@@ -40,7 +40,7 @@ namespace Site
                 string st = "~/images/";
                 string img = st + fileupload.FileName;
                 string name = (string)Request.QueryString["id"];
-                string sql = "update category set cat_name='" + cat_name.Text + "' , cat_img='"+img+"' , location_1='"+loc_1.Text+"' , location_2='"+loc_2.Text+"' ,  location1_price='"+loc1_price+"' , location2_price='"+loc2_price.Text+"'  where cat_name='"+name+"'";
+                string sql = "update category set cat_name='" + cat_name.Text + "' , cat_img='"+img+"' , location_1='"+loc_1.Text+"' , location_2='"+loc_2.Text+"' ,  location1_price='"+loc1_price.Text+"' , location2_price='"+loc2_price.Text+"'  where cat_name='"+name+"'";
                 SqlDataAdapter da = new SqlDataAdapter(sql,DBclass.cn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
