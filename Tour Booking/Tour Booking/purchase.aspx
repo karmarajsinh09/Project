@@ -18,7 +18,7 @@
         <ItemTemplate>
             <tr>
                 <td><%#Eval("place_name") %></td>
-                <td><asp:Image ID="img" runat="server" ImageUrl='<%#Eval("place_imgpath") %>' /></td>
+                <td><asp:Image ID="imgpurchase" style ="height:100px; width:100px;" runat="server" ImageUrl='<%#Eval("place_imgpath") %>' /></td>
                 <td><%#Eval("price") %></td>
                
             </tr>

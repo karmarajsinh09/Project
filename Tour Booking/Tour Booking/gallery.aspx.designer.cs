@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Site
-{
-
-
-    public partial class gallery
-    {
-
+namespace Site {
+    
+    
+    public partial class gallery {
+        
         /// <summary>
         /// galbook control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl galbook;
-
+        
         /// <summary>
         /// lbPlace_name control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbPlace_name;
-
+        
         /// <summary>
         /// placename control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox placename;
-
+        
         /// <summary>
         /// lbimage control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbimage;
-
+        
         /// <summary>
         /// place_image control.
         /// </summary>
@@ -58,7 +56,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image place_image;
-
+        
         /// <summary>
         /// lbprice control.
         /// </summary>
@@ -67,7 +65,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbprice;
-
+        
         /// <summary>
         /// price control.
         /// </summary>
@@ -76,7 +74,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox price;
-
+        
         /// <summary>
         /// book control.
         /// </summary>
@@ -85,7 +83,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button book;
-
+        
         /// <summary>
         /// cancel control.
         /// </summary>
@@ -94,7 +92,16 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button cancel;
-
+        
+        /// <summary>
+        /// gallerylabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label gallerylabel;
+        
         /// <summary>
         /// msg1 control.
         /// </summary>
@@ -103,7 +110,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label msg1;
-
+        
         /// <summary>
         /// home control.
         /// </summary>

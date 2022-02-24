@@ -65,6 +65,17 @@ namespace Site
             SqlDataAdapter da1 = new SqlDataAdapter(sql1, DBclass.cn);
             DataTable dt1 = new DataTable();
             da1.Fill(dt1);
+
+            if (!da1.Equals(null))
+            {
+
+                Response.Redirect("cart.aspx");
+            }
+            else
+            {
+                categorylabel.Visible = true;
+            }
+
         }
 
         protected void cancel_Click(object sender, EventArgs e)

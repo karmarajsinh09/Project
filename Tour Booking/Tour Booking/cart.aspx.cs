@@ -17,11 +17,11 @@ namespace Site
             if ((string)Session["logedin"] == "loged_in")
             {
                 string user = (string)Session["user"];
-                string sql = "select * from cart where status12='"+Session["user"]+"' and status=1  ";
+                string sql = "select * from cart where status12='" + Session["user"] + "' and status= 1  ";
                 SqlDataAdapter da = new SqlDataAdapter(sql, DBclass.cn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                if (dt.Rows.Count >=1)
+                if (dt.Rows.Count >= 1)
                 {
                     Repeater1.DataSource = dt;
                     Repeater1.DataBind();
@@ -30,33 +30,37 @@ namespace Site
                 {
                     cart.Visible = false;
                     msgcart1.Visible = true;
-                    
+
                 }
             }
             else
             {
                 msgcart.Visible = true;
             }
-            
-            
+
+
         }
+
 
         protected void purchase_Click(object sender, EventArgs e)
         {
             Response.Redirect("purchase.aspx");
+            //Response.Write("PURCHASE CLICK");
         }
         public string sum()
         {
-            string sql = "select SUM(price) from cart where status12='"+Session["user"]+"' and status=1 ";
+            string sql = "select SUM(price) from cart where status12='" + Session["user"] + "' and status=1 ";
             SqlCommand cmd = new SqlCommand(sql, DBclass.cn);
             DBclass.cn.Open();
             string sum = cmd.ExecuteScalar().ToString();
-            
+            DBclass.cn.Close();
             cmd.Dispose();
 
             return Convert.ToString(sum);
-            DBclass.cn.Close();
+
         }
+
+
 
     }
 }

@@ -1,11 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Tour.Master" CodeBehind="cart.aspx.cs" Inherits="Site.WebForm3" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link href="css/bootstrap.css" rel="stylesheet" />
     
     <div id="cart" runat="server" align="center">
         <br /><br /><br />
-    <asp:Repeater ID="Repeater1" runat="server">
+    <asp:Repeater ID="Repeater1" runat="server" >
         <HeaderTemplate>
             <h1 align="center"> Cart Page</h1>
             <table border="1" align="center">

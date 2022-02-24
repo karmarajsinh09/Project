@@ -72,6 +72,12 @@
                   <asp:Button ID="cancel" runat="server" class="form-control" Text="cancel" CssClass="btn btn-danger btn-block" Width="500px" Height="49px" CausesValidation="False" UseSubmitBehavior="False" OnClick="cancel_Click"   />
                </td>
            </tr>
+           <tr>
+                    <td align="center">
+                     <asp:Label ID="gallerylabel" Visible="False" runat="server" 
+                            Text="Package Not Added to Cart" ForeColor="#CC0000" Font-Size="Medium"></asp:Label>
+                    </td>
+           </tr>
        
         </table>
 

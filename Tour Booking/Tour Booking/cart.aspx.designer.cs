@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Site
-{
-
-
-    public partial class WebForm3
-    {
-
+namespace Site {
+    
+    
+    public partial class WebForm3 {
+        
         /// <summary>
         /// cart control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl cart;
-
+        
         /// <summary>
         /// Repeater1 control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater Repeater1;
-
+        
         /// <summary>
         /// msgcart control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label msgcart;
-
+        
         /// <summary>
         /// msgcart1 control.
         /// </summary>

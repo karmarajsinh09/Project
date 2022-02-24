@@ -14,29 +14,34 @@ namespace Site
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string sql = "select * from cart where status12='"+Session["user"]+"' and status=1 ";
-            SqlDataAdapter da = new SqlDataAdapter(sql,DBclass.cn);
+            if (!Page.IsPostBack)
+            { //do something 
+            }
+
+            string sql = "select * from cart where status12='" + Session["user"] + "' and status=1 ";
+            SqlDataAdapter da = new SqlDataAdapter(sql, DBclass.cn);
             DataTable dt = new DataTable();
             da.Fill(dt);
-           
-            
+
+
             if (dt.Rows.Count >= 1)
             {
                 Repeater1.DataSource = dt;
                 Repeater1.DataBind();
-                
+
             }
             else
             {
                 Response.Write("Your cart is empty");
             }
+
         }
         public string sum()
         {
             string sql = "select SUM(price) from cart where status12='" + Session["user"] + "' and status=1 ";
             SqlCommand cmd = new SqlCommand(sql, DBclass.cn);
             DBclass.cn.Open();
-            int sum = Convert.ToInt32(cmd.ExecuteScalar().ToString());
+            string sum = cmd.ExecuteScalar().ToString();
             DBclass.cn.Close();
             cmd.Dispose();
 
