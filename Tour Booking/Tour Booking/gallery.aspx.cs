@@ -64,7 +64,7 @@ namespace Site
 
         protected void cancel_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Default.aspx");
         }
 
         protected void home_Click(object sender, EventArgs e)

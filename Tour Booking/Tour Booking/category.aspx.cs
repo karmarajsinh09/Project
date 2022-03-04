@@ -80,7 +80,7 @@ namespace Site
 
         protected void cancel_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Default.aspx");
         }
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
