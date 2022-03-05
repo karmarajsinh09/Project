@@ -44,7 +44,13 @@ namespace Site
             string sum = cmd.ExecuteScalar().ToString();
             DBclass.cn.Close();
             cmd.Dispose();
-
+            string sql1 = "update cart set status=2 where status12='" + Session["user"] + "' and status=1";
+            SqlDataAdapter da1 = new SqlDataAdapter(sql1, DBclass.cn);
+            DataTable dt1 = new DataTable();
+            da1.Fill(dt1);
+            if (!da1.Equals(null))
+            {
+            }
             return Convert.ToString(sum);
         }
     }

@@ -19,6 +19,7 @@
                 <td><%#Eval("place_name") %></td>
                 <td><asp:Image ID="img" runat="server" ImageUrl='<%#Eval("place_imgpath") %>' Height="70px" Width="70px" /></td>
                 <td>Rs. <%#Eval("price") %> </td>
+                <td><a href='cart.aspx?place_name_remove=<%# Eval("place_name") %>' ID="removecart"   >Remove </a></td>
             </tr>
         </ItemTemplate>
         <FooterTemplate>

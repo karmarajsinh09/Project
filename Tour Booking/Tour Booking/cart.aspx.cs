@@ -32,6 +32,18 @@ namespace Site
                     msgcart1.Visible = true;
 
                 }
+                if (!IsPostBack)
+                {
+                    string place_name = (string)Request.QueryString["place_name_remove"];
+                    string sql1 = "update cart set status= 0 where place_name='" + place_name + "' and status12='" + Session["user"] + "' ";
+                    SqlDataAdapter da1 = new SqlDataAdapter(sql1, DBclass.cn);
+                    DataTable dt1 = new DataTable();
+                    da1.Fill(dt1);
+                    if (!da1.Equals(null))
+                    {
+                    }
+
+                }
             }
             else
             {
