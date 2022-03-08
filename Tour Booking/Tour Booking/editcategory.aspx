@@ -30,7 +30,7 @@
                <div class="mb-3 col-12">
     <label for="exampleInputPassword1" class="form-label">location 2:<asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="loc_2" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                    </label>
-    &nbsp;<asp:TextBox ID="loc_2" runat="server"  class="form-control" ></asp:TextBox>
+    &nbsp;<asp:TextBox ID="loc_1" runat="server"  class="form-control" ></asp:TextBox>
   </div>
              <div class="mb-3 col-12">
     <label for="exampleInputPassword1" class="form-label">location1 Price :<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="loc1_price" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>

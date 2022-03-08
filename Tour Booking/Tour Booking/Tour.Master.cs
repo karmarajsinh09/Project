@@ -17,6 +17,7 @@ namespace Site
                 btnlogout.Visible = true;
                 btnregister.Visible = false;
                 btnlogin.Visible = false;
+                admin_login.Visible = false;
 
             }
             else

@@ -14,8 +14,25 @@ namespace Site
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
+            if(!IsPostBack)
+            {
 
-		}
+            string cat_nam = (string)Request.QueryString["id"];
+            string sql1 = "select 8 from category where cat_name='" + cat_nam + "'";
+            SqlDataAdapter da = new SqlDataAdapter(sql1, DBclass.cn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            cat_name.Text = (string)dt.Rows[0]["cat_name"];
+
+            loc_1.Text = (string)dt.Rows[0]["location_1"];
+            loc_2.Text = (string)dt.Rows[0]["location_2"];
+            loc1_price.Text = (string)dt.Rows[0]["location1_price"];
+            loc2_price.Text = (string)dt.Rows[0]["location2_price"];
+                
+
+            }
+
+        }
 
         protected void cat_clear_Click(object sender, EventArgs e)
         {
