@@ -8,3 +8,8 @@ E:\karmarajsinh\Project\Tour Booking\Tour Booking\bin\Tour Booking.pdb
 E:\karmarajsinh\Project\Tour Booking\Tour Booking\obj\Debug\Tour Booking.csprojResolveAssemblyReference.cache
 E:\karmarajsinh\Project\Tour Booking\Tour Booking\obj\Debug\Tour Booking.dll
 E:\karmarajsinh\Project\Tour Booking\Tour Booking\obj\Debug\Tour Booking.pdb
+E:\karmarajsinh\Project1\Tour Booking\Tour Booking\bin\Tour Booking.dll
+E:\karmarajsinh\Project1\Tour Booking\Tour Booking\bin\Tour Booking.pdb
+E:\karmarajsinh\Project1\Tour Booking\Tour Booking\obj\Debug\Tour Booking.csprojResolveAssemblyReference.cache
+E:\karmarajsinh\Project1\Tour Booking\Tour Booking\obj\Debug\Tour Booking.dll
+E:\karmarajsinh\Project1\Tour Booking\Tour Booking\obj\Debug\Tour Booking.pdb

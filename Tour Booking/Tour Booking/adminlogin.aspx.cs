@@ -14,6 +14,11 @@ namespace Site
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if ((string)Session["logedin"] == "loged_in")
+            { 
+                Response.Redirect("Default.aspx");
+            }
+
             lgmsg.Visible = false;
             lgmsg2.Visible = false;
         }

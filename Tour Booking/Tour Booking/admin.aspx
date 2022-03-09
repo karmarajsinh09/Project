@@ -349,10 +349,10 @@
                </HeaderTemplate>
                <ItemTemplate>
                    <tr>
-                       <td><%#Eval("unm") %></td>
+                       <td><%#Eval("username") %></td>
                        <td><%#Eval("email") %></td>
-                       <td><%#Eval("number") %></td>
-                       <td><%#Eval("msg") %></td>
+                       <td><%#Eval("contact_number") %></td>
+                       <td><%#Eval("message") %></td>
                    </tr>
 
                </ItemTemplate>

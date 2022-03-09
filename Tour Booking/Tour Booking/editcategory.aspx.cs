@@ -18,7 +18,7 @@ namespace Site
             {
 
             string cat_nam = (string)Request.QueryString["id"];
-            string sql1 = "select 8 from category where cat_name='" + cat_nam + "'";
+            string sql1 = "select * from category where cat_name='" + cat_nam + "'";
             SqlDataAdapter da = new SqlDataAdapter(sql1, DBclass.cn);
             DataTable dt = new DataTable();
             da.Fill(dt);
